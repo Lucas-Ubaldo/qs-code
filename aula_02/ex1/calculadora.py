@@ -2,12 +2,18 @@ class Calculadora():
 
     @staticmethod
     def somar(n, m):
-        if n + m == 3:
-            return 3
+        saida = n + m
+        if n + m == saida:
+            resultado = n + m
+            return resultado
 
 
-    def subtrair(n):
-        return None
+    def subtrair(n, m):
+        saida = n - m
+        if n - m == saida:
+            resultado = n - m
+            return resultado
+            
 
     def multiplicar(n):
         return None

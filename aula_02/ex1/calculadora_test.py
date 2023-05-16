@@ -25,15 +25,23 @@ class CalculadoraTeste(unittest.TestCase):
          self.assertEqual(
              Calculadora.subtrair(1, 2), -1)
 
-    def test_subtracao_1_2(self):
+    def test_subtracao_59_9(self):
          self.assertEqual(
-             Calculadora.subtrair(0, 0), 0)
+             Calculadora.subtrair(59, 9), 50)
 
 
     #multiplicação
     def test_multiplicacao_10_1(self):
          self.assertEqual(
              Calculadora.multiplicar(10, 1), 10)
+
+    def test_multiplicacao_89_0(self):
+         self.assertEqual(
+             Calculadora.multiplicar(89, 0), 0)
+
+    def test_multiplicacao_2_8(self):
+         self.assertEqual(
+             Calculadora.multiplicar(2, 8), 16)
 
 
     #divisao

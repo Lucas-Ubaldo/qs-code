@@ -41,3 +41,11 @@ class CalculadoraTeste(unittest.TestCase):
          self.assertEqual(
              Calculadora.dividir(1, 0), "Valor invalido")
     
+    def test_divisao_10_1(self):
+         self.assertEqual(
+             Calculadora.dividir(10, 1), 10)
+
+    def test_divisao_100_3(self):
+         self.assertEqual(
+             Calculadora.dividir(100, 2), 50)
+    

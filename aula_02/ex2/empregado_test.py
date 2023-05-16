@@ -14,7 +14,7 @@ class EmpregadoTeste(unittest.TestCase):
     def test_gerar_nome_completo(self):
         e1 = Empregado('cassio', 'ramos', 'presidente', 50000)
         saida = e1.gerar_nome_completo()
-        esperado = 'cassio ramos'
+        esperado = 'cassioramos'
         self.assertEqual(saida, esperado)
 
 

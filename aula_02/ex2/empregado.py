@@ -17,6 +17,6 @@ class Empregado():
     def validar_cargo(self):
         cargos_empresa = ['presidente', 'diretor', 'gerente', 'analista', 'auxiliar']
         if self.cargo in cargos_empresa:
-            return 'OK'
+            return self.cargo
         else:
             return "Cargo invalido"

@@ -17,4 +17,10 @@ class EmpregadoTeste(unittest.TestCase):
         esperado = 'cassioramos'
         self.assertEqual(saida, esperado)
 
+    def test_validar_cargo(self):
+        e1 = Empregado('cassio', 'ramos', 'presidente', 50000)
+        saida = e1.validar_cargo()
+        esperado = 'presidente'
+        self.assertEqual(saida, esperado)
+
 
